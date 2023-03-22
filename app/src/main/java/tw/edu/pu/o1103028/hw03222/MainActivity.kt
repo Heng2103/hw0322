@@ -13,7 +13,11 @@ class MainActivity : AppCompatActivity() {
 
         txv = findViewById(R.id.txv)
         txv.setOnClickListener({
-            txv.text = "许梓恒!"
+           if (txv.text == "许梓恒!"){
+               txv.text ="海清班，哈哈哈"
+           }else{
+               txv.text="许梓恒!"
+           }
         })
     }
 }
